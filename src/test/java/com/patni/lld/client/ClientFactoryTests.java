@@ -32,7 +32,7 @@ public class ClientFactoryTests {
 
     @Test
     public void buildClientWithValidFilePath_shouldCreateFileClient() throws FileNotFoundException {
-        String[] args = {"sample_input/input1.txt"};
+        String[] args = {"sample_input/input.txt"};
         Client client = ClientFactory.buildClient(args, commandFactory);
 
         assertTrue(client instanceof FileClient);
